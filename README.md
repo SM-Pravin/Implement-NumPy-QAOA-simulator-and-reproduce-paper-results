@@ -78,3 +78,21 @@ The paper proves that the maximum expectation value $M_p/n$ for a 2-regular ring
 * **Tree Expectation ($p=2$)**: For $p=2$, the maximum expectation value on the 14-vertex tree subgraph is exactly **0.7559**.
 
 Both results match the paper's findings exactly, validating the algorithm's local-subgraph simplification properties.
+
+---
+
+## Credits and Citation
+
+This repository is a reproduction of the research published by Edward Farhi, Jeffrey Goldstone, and Sam Gutmann. Please cite their original work if referencing this algorithm:
+
+```bibtex
+@misc{farhi2014quantumapproximateoptimizationalgorithm,
+      title={A Quantum Approximate Optimization Algorithm}, 
+      author={Edward Farhi and Jeffrey Goldstone and Sam Gutmann},
+      year={2014},
+      eprint={1411.4028},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/1411.4028}, 
+}
+```

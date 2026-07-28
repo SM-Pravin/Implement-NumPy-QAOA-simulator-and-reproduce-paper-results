@@ -50,3 +50,25 @@ The replication has successfully validated the core claims of Farhi et al. (2014
 * The parameter optimization scales independently of the graph size $n$ at low $p$.
 
 For future studies, we recommend extending this simulator to include noise models (decoherence, amplitude damping) to analyze QAOA's performance under realistic NISQ (Noisy Intermediate-Scale Quantum) conditions.
+
+---
+
+## Credits and Citation
+
+This recreation is based on the research paper:
+* **Title**: A Quantum Approximate Optimization Algorithm
+* **Authors**: Edward Farhi, Jeffrey Goldstone, Sam Gutmann (Center for Theoretical Physics, MIT)
+* **ArXiv**: [quant-ph/1411.4028](https://arxiv.org/abs/1411.4028)
+
+BibTeX citation:
+```bibtex
+@misc{farhi2014quantumapproximateoptimizationalgorithm,
+      title={A Quantum Approximate Optimization Algorithm}, 
+      author={Edward Farhi and Jeffrey Goldstone and Sam Gutmann},
+      year={2014},
+      eprint={1411.4028},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/1411.4028}, 
+}
+```
