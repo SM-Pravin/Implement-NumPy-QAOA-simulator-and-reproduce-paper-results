@@ -70,14 +70,15 @@ In multi-objective optimization, we aim to find the **Pareto Front**—the set o
 
 ---
 
-## Credits and Citation
+## Credits and Citations
 
-This recreation is based on the research paper:
+This repository is built upon the following foundational quantum computing papers:
+
+### 1. Single-Objective QAOA (Phase 1)
 * **Title**: A Quantum Approximate Optimization Algorithm
-* **Authors**: Edward Farhi, Jeffrey Goldstone, Sam Gutmann (Center for Theoretical Physics, MIT)
+* **Authors**: Edward Farhi, Jeffrey Goldstone, and Sam Gutmann (2014)
 * **ArXiv**: [quant-ph/1411.4028](https://arxiv.org/abs/1411.4028)
 
-BibTeX citation:
 ```bibtex
 @misc{farhi2014quantumapproximateoptimizationalgorithm,
       title={A Quantum Approximate Optimization Algorithm}, 
@@ -87,5 +88,24 @@ BibTeX citation:
       archivePrefix={arXiv},
       primaryClass={quant-ph},
       url={https://arxiv.org/abs/1411.4028}, 
+}
+```
+
+### 2. Multi-Objective QAOA (Phase 2 & beyond)
+* **Title**: Quantum Approximate Multi-Objective Optimization
+* **Authors**: Ayse Kotil, Elijah Pelofske, Stephanie Riedmüller, Daniel J. Egger, Stephan Eidenbenz, Thorsten Koch, and Stefan Woerner (2025)
+* **Journal**: *Nature Computational Science*, 2025
+* **ArXiv**: [quant-ph/2503.22797](https://arxiv.org/abs/2503.22797)
+
+```bibtex
+@article{kotil2025quantum,
+  title={Quantum Approximate Multi-Objective Optimization},
+  author={Kotil, Ayse and Pelofske, Elijah and Riedm{\"u}ller, Stephanie and Egger, Daniel J and Eidenbenz, Stephan and Koch, Thorsten and Woerner, Stefan},
+  journal={Nature Computational Science},
+  year={2025},
+  eprint={2503.22797},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2503.22797}
 }
 ```
