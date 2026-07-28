@@ -79,6 +79,12 @@ The paper proves that the maximum expectation value $M_p/n$ for a 2-regular ring
 
 Both results match the paper's findings exactly, validating the algorithm's local-subgraph simplification properties.
 
+### 3. Phase 2: Multi-Objective Classical Wrapper (WSM)
+We implemented a classical wrapper to study multi-objective MaxCut optimization:
+- **Conflicting Graph**: A 10-node random graph with negatively correlated edge weights (representing competing objectives like "Cost" and "Latency").
+- **True Pareto Front**: Found by brute-forcing all 512 unique cuts and filtering out dominated solutions.
+- **Weighted Sum Method (WSM)**: We solved $\max_z \left[ \lambda C^{(1)}(z) + (1-\lambda) C^{(2)}(z) \right]$ over a grid of weights $\lambda \in [0, 1]$. WSM successfully discovered all optimal trade-off points on the convex boundary of the Pareto front. The resulting plot is saved at `plots/multi_objective_pareto.png`.
+
 ---
 
 ## Credits and Citation

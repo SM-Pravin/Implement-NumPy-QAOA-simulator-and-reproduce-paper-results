@@ -53,6 +53,23 @@ For future studies, we recommend extending this simulator to include noise model
 
 ---
 
+## Phase 2: Multi-Objective Classical Wrapper (Weighted Sum Method)
+
+In multi-objective optimization, we aim to find the **Pareto Front**—the set of solutions where you cannot improve one objective without worsening another. We implemented a classical multi-objective solver in [classical_multi_objective.py](file:///c:/Users/pravi/Desktop/Quantum%20Approximate%20Optimization%20Algorithm/src/classical_multi_objective.py) that:
+1. Generates a 10-node random graph with conflicting edge weights (representing competing objectives like "Cost" and "Latency").
+2. Brute-forces all 512 unique cuts to identify the **True Pareto Front**.
+3. Solves the weighted sum problem:
+   $$\max_z \left[ \lambda C^{(1)}(z) + (1-\lambda) C^{(2)}(z) \right]$$
+   over a grid of weights $\lambda \in [0, 1]$.
+
+### Results
+- The WSM successfully mapped out the optimal compromise cuts.
+- The results are plotted in `plots/multi_objective_pareto.png` (using relative path `../plots/multi_objective_pareto.png` for portable rendering).
+
+![Multi-Objective Pareto Front Plot](../plots/multi_objective_pareto.png)
+
+---
+
 ## Credits and Citation
 
 This recreation is based on the research paper:
